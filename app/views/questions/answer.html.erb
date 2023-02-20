@@ -1,0 +1,20 @@
+<div class="wrapper">
+
+  <h1 class="main-title"><%="STUPID COACHING"%></h1>
+  <br>
+
+  <div class="question-block">
+    <h1><%="Question: "%> </h1>
+    <h2><%=params[:ask]%></h2>
+  </div>
+
+  <div class="answer-block">
+    <h1><%="Answer: "%> </h1>
+    <h2><%=@answer%></h2>
+  </div>
+
+  <br>
+  <button class="btn btn-outline-primary">
+  <%= link_to "Back to Ask", "http://127.0.0.1:3000/ask", class: "link" %>
+  </button>
+</div>
